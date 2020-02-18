@@ -1,0 +1,53 @@
+{
+  "name": "wallet-backend-14-hackaton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha 'api/**/*.spec.js' --exit --timeout 10000",
+    "lint": "eslint api/**/*.js",
+    "lint:fix": "eslint api/**/*.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/reloaderlev/wallet-backend-14-hackaton.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/reloaderlev/wallet-backend-14-hackaton/issues"
+  },
+  "homepage": "https://gitlab.com/reloaderlev/wallet-backend-14-hackaton#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "husky": "^3.1.0",
+    "mocha": "^6.2.2",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2",
+    "supertest-promised": "^1.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test && npm run lint",
+      "pre-push": "npm test && npm run lint"
+    }
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "http-status-codes": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.4",
+    "node-validator": "^0.1.27",
+    "passport": "^0.4.1",
+    "passport-google-oauth2": "^0.2.0",
+    "passport-local": "^1.0.0",
+    "randomstring": "^1.1.5",
+    "swagger-ui-express": "^4.1.2"
+  }
+}

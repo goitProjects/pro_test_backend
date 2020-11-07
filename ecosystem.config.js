@@ -8,7 +8,7 @@ module.exports = {
       increment_var: 'PORT',
       env: {
         PORT: 3000,
-        NODE_ENV: 'production',
+        NODE_ENV: 'development',
       },
     },
   ],
